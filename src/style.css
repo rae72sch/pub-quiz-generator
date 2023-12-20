@@ -85,6 +85,26 @@ a {
   text-align: left;
 }
 
+/* .hidden {
+  display: none
+} */
+
+.generating-timer {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
 .bottom-section {
   background-image: url(../images/pub-quiz-bottom.jpg);
   background-position: bottom;

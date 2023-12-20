@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <link rel="stylesheet" href="src/style.css">
   <title>AI Pub Quiz Question Generator</title>
 </head>
@@ -14,20 +16,20 @@
       </header>
       
       <div class="form-container">
-        <form>
-          <input type="text" placeholder="Enter the topic you'd like some questions about..." class="form-input" autocomplete="off" autofocus required>
+        <form id="quiz-form">
+          <input type="text" id="user-input" placeholder="Enter the topic you'd like some questions about..." class="form-input" autocomplete="off" autofocus required>
           <input type="submit" class="submit-button">
         </form>
         <div class="example">e.g. trains, flags or presidents</div>
       </div>
     </div>
     <div class="bottom-section"> 
-      <div class="questions">
-        This is where the questions and answers will be displayed
+      <div class="questions hidden" id="questions">
+        <!-- This is where the questions and answers will be displayed
         <br>
         Eg. What is the name of the iconic luxury train service that travels from London to Venice, passing through the picturesque landscapes of the Alps?
         <br>
-        Answer: Venice Simplon-Orient-Express
+        Answer: Venice Simplon-Orient-Express -->
       </div>
     </div>
   </div>
